@@ -9,11 +9,11 @@
     --primary-dark: #1a1a1a;
     --secondary-dark: #2a2a2a;
     --accent-red: #dc143c;
-    --accent-gold: #ffd700;
+    --accent-gold: #e04262;
     --text-light: #ffffff;
     --text-gray: #cccccc;
     --gradient-red: linear-gradient(135deg, #dc143c, #8b0000);
-    --gradient-gold: linear-gradient(135deg, #ffd700, #daa520);
+    --gradient-gold: linear-gradient(135deg, #cc4e67, #e04262);
     --shadow-glow: 0 0 20px rgba(220, 20, 60, 0.3);
 }
 
