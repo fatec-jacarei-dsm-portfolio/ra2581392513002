@@ -1,6 +1,3 @@
-// Portfolio Interactive Features - JavaScript
-
-// Classe principal do Portfolio
 class Portfolio {
     constructor() {
         this.navbar = document.querySelector('.navbar');
@@ -24,7 +21,6 @@ class Portfolio {
         this.animateOnScroll();
     }
 
-    // Configurar Intersection Observer para animações no scroll
     setupIntersectionObserver() {
         const config = {
             threshold: 0.1,
@@ -45,7 +41,6 @@ class Portfolio {
         });
     }
 
-    // Destacar link ativo na navegação
     highlightActiveNavLink(sectionId) {
         this.navLinks.forEach(link => {
             const href = link.getAttribute('href');
@@ -57,7 +52,6 @@ class Portfolio {
         });
     }
 
-    // Configurar rolagem suave
     setupSmoothScrolling() {
         this.navLinks.forEach(link => {
             link.addEventListener('click', (e) => {
@@ -79,7 +73,6 @@ class Portfolio {
         });
     }
 
-    // Efeitos da barra de navegação
     setupNavbarEffects() {
         let lastScrollY = window.scrollY;
 
@@ -104,7 +97,6 @@ class Portfolio {
         });
     }
 
-    // Animar elementos no scroll
     animateOnScroll() {
         const animatedElements = document.querySelectorAll('.section-title, .about-content, .projects-grid, .tech-grid');
         
@@ -121,7 +113,6 @@ class Portfolio {
         });
     }
 
-    // Animar barras de progresso das tecnologias
     setupTechProgressAnimation() {
         const techBars = document.querySelectorAll('.tech-progress');
         
@@ -144,7 +135,6 @@ class Portfolio {
         });
     }
 
-    // Adicionar efeitos de hover nos cards de projeto
     setupProjectHoverEffects() {
         const projectCards = document.querySelectorAll('.project-card');
         
@@ -163,12 +153,10 @@ class Portfolio {
         });
     }
 
-    // Efeito parallax nos cards
     addParallaxEffect(card) {
         card.style.transition = 'transform 0.1s ease-out';
     }
 
-    // Manipular movimento do mouse nos cards
     handleMouseMove(e, card) {
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left;
@@ -183,13 +171,11 @@ class Portfolio {
         card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(10px)`;
     }
 
-    // Resetar transformação do card
     resetCardTransform(card) {
         card.style.transition = 'transform 0.3s ease-out';
         card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
     }
 
-    // Efeito de digitação para o nome
     setupTypingEffect() {
         const nameElement = document.querySelector('.about-name');
         if (nameElement) {
@@ -208,7 +194,6 @@ class Portfolio {
         }
     }
 
-    // Adicionar partículas de fundo
     createBackgroundParticles() {
         const particlesContainer = document.createElement('div');
         particlesContainer.className = 'particles-container';
@@ -229,7 +214,6 @@ class Portfolio {
         }
     }
 
-    // Criar partícula individual
     createParticle(container) {
         const particle = document.createElement('div');
         particle.className = 'particle';
@@ -259,12 +243,10 @@ class Portfolio {
         }, duration * 1000);
     }
 
-    // Configurar tema dark/light (futuro)
     setupThemeToggle() {
         console.log('Theme toggle configurado para implementação futura');
     }
 
-    // Performance optimization
     optimizePerformance() {
         const images = document.querySelectorAll('img');
         images.forEach(img => {
@@ -281,7 +263,6 @@ class Portfolio {
     }
 }
 
-// Inicializar quando DOM estiver carregado
 document.addEventListener('DOMContentLoaded', () => {
     const portfolio = new Portfolio();
     console.log('Portfolio carregado com sucesso!');
