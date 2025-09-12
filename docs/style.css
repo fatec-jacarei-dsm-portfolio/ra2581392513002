@@ -1,4 +1,3 @@
-/* Reset e configurações básicas */
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +28,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -96,7 +94,6 @@ body {
     width: 80%;
 }
 
-/* Main Content */
 .main-content {
     margin-top: 80px;
 }
@@ -146,7 +143,6 @@ body {
     border-radius: 2px;
 }
 
-/* Seção Sobre */
 .about-content {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -231,7 +227,6 @@ body {
     box-shadow: var(--shadow-glow);
 }
 
-/* Seção Projetos */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -342,7 +337,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Seção Tecnologias */
 .tech-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -457,7 +451,6 @@ body {
     }
 }
 
-/* Classes adicionais para JavaScript */
 .navbar.scrolled {
     background: rgba(26, 26, 26, 0.98) !important;
     box-shadow: 0 2px 20px rgba(220, 20, 60, 0.1);
@@ -491,7 +484,6 @@ body {
     opacity: 0.4;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .nav-container {
         padding: 1rem;
