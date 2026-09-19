@@ -10,5 +10,6 @@ Repositório do aluno CAIO ARAUJO.
 
 ### Portfólio Online
 🔗 [Acesso ao portfolio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392513002/)
-🎤 [Pitch de Apresentação (vídeo)](https://youtu.be/sGjIR3JcGXs)
+🎤 [Pitch de Apresentação 2DSM (vídeo)](https://youtu.be/sGjIR3JcGXs)
+🎤 [Pitch de Apresentação 4DSM (vídeo)](https://youtu.be/wazGXCG0MFo)
  
